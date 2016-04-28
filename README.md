@@ -71,7 +71,12 @@ The good news is that browsers have recently implemented a new api: [fetch](http
 As with every new browser feature, it's not yet supported everywhere so you'll need a polyfill such as isomorphic-fetch.
 Internally it uses [github/fetch](https://github.com/github/fetch) but follows an "universal" approach, making it work as well on the server (NodeJS) as on the client.
 
-Note: there are a few things that may differ from your usual library so make sure to have a look at [GitHub's notes](https://github.com/github/fetch#caveats).
+There are a few things that may differ from your usual library so make sure to have a look at [GitHub's notes](https://github.com/github/fetch#caveats).
+
+**Update:** it's important to keep in mind that fetch is a browser feature and spec'ed as such.
+It's much simpler than a library like [request](https://github.com/request/request) and may end up not fitting your needs on the server.
+Also, if you plan to reuse your ES6/7 wrapper then you'll need to set up the server accordingly.
+In the end, using fetch is still a good idea but the isomorphic version may not be that useful.
 
 **Alternatives**
 
