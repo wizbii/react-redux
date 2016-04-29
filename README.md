@@ -8,6 +8,7 @@ What it takes to replace a framework by React+Redux.
 * [Data Structure](#data-structure)
 * [Form Validation](#form-validation)
 * [Tests](#tests)
+* [Developer Experience](#developer-experience)
 * [Things We Are Considering](#things-we-are-considering)
 * [Examples](#examples)
 
@@ -116,6 +117,18 @@ If you're building a single page application (SPA), meaning all the routing is h
 
 We couldn't find any active alternative so react-router is the way to go.
 
+### [react-router-redux](https://github.com/reactjs/react-router-redux)
+
+Synchronize the router with the application state and provides some "Redux-way" of manipulating routes.
+It's important to understand that react-router-redux doesn't add any new features to the react-router, it's just a way to follow the Redux pattern properly.
+By doing so, it also improve the developer experience by enabling time travel.
+
+**Alternatives**
+
+While we'd strongly advise to use react-router-redux, you could probably skip it if you're just getting started with React and the React Router.
+
+* [redux-router](https://github.com/acdlite/redux-router) - Differs more from the react-router api but brings some niceties. Not official though and announced to be "experimental".
+
 ## Data Structure
 
 The Redux pattern involves having all the app's state in a single store so taking the time to design its shape properly is really important.
@@ -170,6 +183,18 @@ Surprisingly, the several form validation library we found were too large and co
 ## Tests
 
 That's a subject we still have to explore but we've heard great things about [jest](https://github.com/facebook/jest) and the well known [mocha](https://github.com/mochajs/mocha).
+
+## Developer Experience
+
+React and Redux do an incredible job at telling you about what's going on, which is especially great when it's going wrong.
+But beyond the libraries, there are quite a few nice developer tools available out there.
+
+### [Redux DevTools](https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd)
+
+This Chrome Extension logs every actions dispatched through the application, along with its state.
+It then allow you to replay and reset them (among other things).
+It doesn't involve much setup and have no impact in "production" mode.
+Have a look at Dan Abramov's talk "[Live React: Hot Reloading with Time Travel at react-europe 2015](https://medium.com/r/?url=https%3A%2F%2Fwww.youtube.com%2Fwatch%3Fv%3DxsSnOQynTHs)" which introduced such concepts with Redux.
 
 ## Things We Are Considering
 
