@@ -129,6 +129,15 @@ While we'd strongly advise to use react-router-redux, you could probably skip it
 
 * [redux-router](https://github.com/acdlite/redux-router) - Differs more from the react-router api but brings some niceties. Not official though and announced to be "experimental".
 
+### [classnames](https://github.com/JedWatson/classnames)
+
+Conditionally applying classes to an element is a little cluttered by default.
+This package allows you to handle it gracefully, in a way that's going to look familiar to Angular developers.
+
+**Alternatives**
+
+Just stick to string concatenation if you don't find yourself dynamically adding classes so often.
+
 ## Data Structure
 
 The Redux pattern involves having all the app's state in a single store so taking the time to design its shape properly is really important.
