@@ -11,6 +11,7 @@ What it takes to replace a framework by React+Redux.
 * [Developer Experience](#developer-experience)
 * [Things We Are Considering](#things-we-are-considering)
 * [Examples](#examples)
+* [Updates](#updates)
 
 ## Motivation
 
@@ -166,15 +167,13 @@ Not using an immutable library is perfectly fine but you'll need to pay special 
 
 * [mori](https://github.com/swannodette/mori) - Apparently it's more functional and faster but larger. It's also less known and has less support so it may be harder to find examples/answers.
 
-### [redux-actions](https://github.com/acdlite/redux-actions)
+### [flux-standard-action](https://github.com/acdlite/flux-standard-action)
 
-redux-actions is a little wrapper that follows the [flux-standard-action](https://github.com/acdlite/flux-standard-action).
-It helps enforcing a common standard of creating and handling actions.
+This standard defines how an action should look, making them more predictable.
 
 **Alternatives**
 
-You don't need redux-actions to follow the standard and you don't need to follow this standard.
-That been said, we'd strongly advise to discuss and establish one.
+You don't need to follow this particular standard but we'd strongly advise to establish one with your team.
 
 ## Form Validation
 
@@ -191,7 +190,7 @@ Surprisingly, the several form validation library we found were too large and co
 
 ## Tests
 
-That's a subject we still have to explore but we've heard great things about [jest](https://github.com/facebook/jest) and the well known [mocha](https://github.com/mochajs/mocha).
+That's a subject we still have to explore but we've heard great things about [jest](https://github.com/facebook/jest), [enzyme](https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f#.qkwnuwazn) and the well known [mocha](https://github.com/mochajs/mocha).
 
 ## Developer Experience
 
@@ -223,3 +222,15 @@ We've spent some time studying awesome examples to make our mind so here's the l
 * [react-redux-starter-kit](https://github.com/davezuko/react-redux-starter-kit)
 * [redux real-world example](https://github.com/reactjs/redux/tree/master/examples/real-world)
 * [react-router huge-apps example](https://github.com/reactjs/react-router/tree/master/examples/huge-apps)
+
+## Updates
+
+### 2016-04-02
+
+* Removed redux-actions: we faced several issues due to a lack of flexibility and inconsistencies.
+* Added flux-standard-action: we dropped redux-actions but still follow this standard.
+* Added enzyme: the redux team seem to be interested in refactoring some of their tests to use it (see [reactjs/redux#1481](https://github.com/reactjs/redux/issues/1481)).
+
+### 2016-05-28
+
+* Updated isomorphic-fetch: fetch may be too simple for certain server-side cases.
