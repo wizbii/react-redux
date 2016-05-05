@@ -47,7 +47,7 @@ store/
 index.js
 ```
 
-There's an other interesting approach called [ducks](ducks-modular-redux) that consists of grouping the reducer with its action creators.
+There's an other interesting approach called [ducks](https://github.com/erikras/ducks-modular-redux) that consists of grouping the reducer with its action creators.
 We're giving it some thought but are concerned about the amount of code that may end up in the same file.
 
 ## Core
