@@ -214,6 +214,14 @@ Below is a list of things that we may need at some point.
 Sometimes a reducer depends on some other part of the state that is not accessible.
 This library allows you to define and access those dependencies.
 
+### [ReactTransitionGroup](https://facebook.github.io/react/docs/animation.html)
+
+Official React component that offers a simple api for css based animations.
+
+### [react-motion](https://github.com/chenglou/react-motion)
+
+Advanced JavaScript animation components, seems to achieve great things with little code.
+
 ## Examples
 
 We've spent some time studying awesome examples to make our mind so here's the list:
