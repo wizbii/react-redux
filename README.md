@@ -234,9 +234,12 @@ We've spent some time studying awesome examples to make our mind so here's the l
 
 ## Updates
 
-### 2016-04-02
+### 2016-04-08
 
 * Updated tests: the React team is discussing about making [enzyme the official TestUtils](https://github.com/reactjs/core-notes/blob/master/2016-05/may-05.md#testutils-and-enzyme).
+
+### 2016-04-02
+
 * Removed redux-actions: we faced several issues due to a lack of flexibility and inconsistencies.
 * Added flux-standard-action: we dropped redux-actions but still follow this standard.
 * Added enzyme: the redux team seem to be interested in refactoring some of their tests to use it (see [reactjs/redux#1481](https://github.com/reactjs/redux/issues/1481)).
