@@ -18,7 +18,7 @@ What it takes to replace a framework by React+Redux.
 Looking into an alternative to Angular 2.0, we had to see what it's like to build a large React+Redux application.
 This document gather all the resources we found to be useful to efficiently replace such a framework.
 
-Read the full introductory article on Medium: *Coming soon*.
+Read the full introductory article on Medium: [On the Lookout for Angular 1’s Future](https://medium.com/@Zh0uzi/bfb826a3b19b).
 
 ## Project Structure
 
