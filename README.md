@@ -85,6 +85,17 @@ In the end, using fetch is still a good idea but the isomorphic version may not 
 * [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest) - For the old school dudes.
 * [github/fetch](https://github.com/github/fetch) - If you don't care too much about having an "universal" fetch.
 
+### [fetchival](https://github.com/typicode/fetchival)
+
+The fetch API is still a pretty low level implementation of http requests.
+Repeatedly setting and creating configuration objects can add some boilerplate code and fetchival is a great abstraction for that.
+It's simple and yet fulfil the needs pretty well.
+
+**Alternatives**
+
+* [fetch-wrapper](https://github.com/nikhilaravi/fetch-wrapper) - Does some extra things to address special cases and provides a callback based API instead of relying on promises.
+* [so-fetch](https://github.com/gabdallah222/so-fetch) - Targeted to Redux so it's pretty specific.
+
 ### [redux-thunk](https://github.com/gaearon/redux-thunk)
 
 Redux action creators are pure, synchronous functions.
@@ -188,6 +199,16 @@ Surprisingly, the several form validation library we found were too large and co
 * [yup](https://github.com/jquense/yup) - Inspired by joi but smaller.
 * [validator.js](https://github.com/chriso/validator.js) - Looks cool but still too complex, does too much things.
 
+### [react-kay](https://github.com/Zhouzi/kay)
+
+HOCs to be plugged with kay, it's pretty much opinionated and focused on simplicity.
+
+**Alternatives**
+
+* [formsy-react](https://github.com/christianalfoni/formsy-react) - Introduce a lot of concepts and configuration.
+* [redux-form](https://github.com/erikras/redux-form) - I'd recommend it if you have some really complex validation needs but it's pretty big.
+* [react-jsonschema-form](https://github.com/mozilla-services/react-jsonschema-form) - May be good for quick and dirty prototypes but seems to completely abstract away the markup.
+
 ## Tests
 
 That's a subject we still have to explore but we've heard great things about [jest](https://github.com/facebook/jest), [enzyme](https://medium.com/airbnb-engineering/enzyme-javascript-testing-utilities-for-react-a417e5e5090f#.qkwnuwazn) and the well known [mocha](https://github.com/mochajs/mocha).
@@ -234,16 +255,21 @@ We've spent some time studying awesome examples to make our mind so here's the l
 
 ## Updates
 
-### 2016-04-08
+### 2016-05-24
+
+* Added fetchival: as a great abstraction over the fetch API.
+* Added react-kay: HOCs to be plugged with kay (form validation).
+
+### 2016-05-08
 
 * Updated tests: the React team is discussing about making [enzyme the official TestUtils](https://github.com/reactjs/core-notes/blob/master/2016-05/may-05.md#testutils-and-enzyme).
 
-### 2016-04-02
+### 2016-05-02
 
 * Removed redux-actions: we faced several issues due to a lack of flexibility and inconsistencies.
 * Added flux-standard-action: we dropped redux-actions but still follow this standard.
 * Added enzyme: the redux team seem to be interested in refactoring some of their tests to use it (see [reactjs/redux#1481](https://github.com/reactjs/redux/issues/1481)).
 
-### 2016-05-28
+### 2016-04-28
 
 * Updated isomorphic-fetch: fetch may be too simple for certain server-side cases.
