@@ -248,12 +248,17 @@ Advanced JavaScript animation components, seems to achieve great things with lit
 
 We've spent some time studying awesome examples to make our mind so here's the list:
 
+* [react-boilerplate](https://github.com/mxstbr/react-boilerplate)
 * [react-redux-universal-hot-example](https://github.com/erikras/react-redux-universal-hot-example)
 * [react-redux-starter-kit](https://github.com/davezuko/react-redux-starter-kit)
 * [redux real-world example](https://github.com/reactjs/redux/tree/master/examples/real-world)
 * [react-router huge-apps example](https://github.com/reactjs/react-router/tree/master/examples/huge-apps)
 
 ## Updates
+
+### 2016-05-29
+
+* Added react-boilerplate: great boilerplate built on top of best practices.
 
 ### 2016-05-24
 
